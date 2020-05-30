@@ -12,7 +12,9 @@ async def on_message(message):
         return
 
     if message.content.startswith('$hello'):
-        await message.channel.send("1xbet", {tts: true})
+        await message.channel.send("1xbet", {
+ tts: true
+})
      
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
 BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")

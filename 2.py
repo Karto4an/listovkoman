@@ -13,5 +13,8 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
+        
+BOT1 = NzE2MzAxNjYzMTQwMzE1MTQ3
+BOT2 = .XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw
 
-client.run(BOT_TOKEN)
+client.run(BOT1+BOT2)

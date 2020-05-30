@@ -12,12 +12,8 @@ async def on_message(message):
         return
 
     if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
-        
-    if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
-        await client.send_message(message.channel, msg)
-        
+        await message.channel.send('/tts 1xbet')
+     
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
 BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")
 

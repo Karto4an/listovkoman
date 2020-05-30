@@ -1,11 +1,17 @@
 import discord
-from discord.ext import commands
 
-TOKEN = '7JNP2mdOy6_9irTutM_eaEGAJq9SEvj5'
-bot = commands.Bot
+client = discord.Client()
 
-@bot.command(pass_context=True)
-async def test(ctx, arg):
-	await ctx.send(arg)
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
 
-bot.run(TOKEN)
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello!')
+
+client.run('7JNP2mdOy6_9irTutM_eaEGAJq9SEvj5')

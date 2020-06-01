@@ -13,6 +13,10 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
         await message.channel.send("1xbet", tts = True)
+
+    if message.content.startswith('!enable'):
+        idle = True
+        await message.channel.send("Enabled:crown:")
      
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
 BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")

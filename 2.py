@@ -19,13 +19,13 @@ async def on_message(message):
         idle = True
         await message.channel.send("Enabled:crown:")
         
-    while idle == True:
-        @client.event
-        async def on_message(message):
-            if message.author == client.user:
-                if message.content.startswith('!disable'):
-                    idle = False
-                    await message.channel.send("Disabled:thumbsdown:")
+while idle == True:
+    @client.event
+    async def on_message(message):
+        if message.author == client.user:
+            if message.content.startswith('!disable'):
+                idle = False
+                await message.channel.send("Disabled:thumbsdown:")
      
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
 BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")

@@ -26,8 +26,9 @@ async def on_message(message):
             if message.author == client.user:
                 return
     
-        if message.content.startswith('!disable'):
-            idle = False
+            if message.content.startswith('!disable'):
+                idle = False
+                await message.channel.send("Disabled:thumbsdown:")
             await message.channel.send("Disabled:thumbsdown:")
      
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")

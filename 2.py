@@ -19,7 +19,7 @@ async def on_message(message):
         idle = True
         await message.channel.send("Enabled:crown:")
         
-    while idle = True:
+    while idle == True:
         if message.content.startswith('!disable'):
             idle = False
             await message.channel.send("Disabled:thumbsdown:")

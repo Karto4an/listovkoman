@@ -17,6 +17,10 @@ async def on_message(message):
     if message.content.startswith('!enable'):
         idle = True
         await message.channel.send("Enabled:crown:")
+
+    if message.content.startswith('!disable'):
+        idle = False
+        await message.channel.send("Disabled:thumbsdown:")
      
 BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
 BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")

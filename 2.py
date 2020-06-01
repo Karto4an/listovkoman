@@ -20,7 +20,6 @@ async def on_message(message):
         await message.channel.send("Enabled:crown:")
         
     while idle == True:
-        print("yes!")
         @client.event
         async def on_message(message):
             if message.author == client.user:

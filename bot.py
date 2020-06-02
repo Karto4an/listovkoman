@@ -10,6 +10,7 @@ def index(request):
     print(os.environ.get('BOT_TOKEN'))
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
+token=1
 
 @client.event
 async def on_ready():

@@ -1,16 +1,15 @@
-import os
 import discord
 import random
+from dotenv import load_dotenv
 
 client = discord.Client()  #initializing some stuff
 random.seed()
 
 #getting token from heroku vars
-def index(request):
-    print(os.environ.get('BOT_TOKEN'))
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
-token=1
 
 @client.event
 async def on_ready():

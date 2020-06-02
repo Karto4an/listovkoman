@@ -1,7 +1,13 @@
 import discord
 import random
 
-client = discord.Client()
+client = discord.Client()  #initializing some stuff
+random.seed()
+
+from boto.s3.connection import S3Connection   #getting token from heroku vars
+token = S3Connection(os.environ['BOT_TOKEN'])
+
+ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
 
 @client.event
 async def on_ready():
@@ -12,12 +18,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    await message.channel.send(random.randint(0,5), tts = True)
+    await message.channel.send(random.choice(ads), tts = True)
 
     if message.content.startswith('$hello'):
-        await message.channel.send("1xbet", tts = True)
+        await message.channel.send("1xbet", tts = True)]
         
-BOT1 = str("NzE2MzAxNjYzMTQwMzE1MTQ3")
-BOT2 = str(".XtKXyQ.KXhvyWv3b_5sbBWzBYap3Uh9Kgw")
 
-client.run(BOT1+BOT2)
+client.run(token)

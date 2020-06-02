@@ -7,7 +7,7 @@ random.seed()
 
 #getting token from heroku vars
 def index(request):
-    token = os.environ.get('BOT_TOKEN')
+    print(os.environ.get('BOT_TOKEN'))
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
 

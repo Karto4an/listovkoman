@@ -1,5 +1,8 @@
+import os
+
 import discord
 import random
+
 from dotenv import load_dotenv
 
 client = discord.Client()  #initializing some stuff

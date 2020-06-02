@@ -10,7 +10,7 @@ random.seed()
 
 #getting token from heroku vars
 load_dotenv()
-token = os.getenv('DISCORD_TOKEN')
+token = os.getenv('BOT_TOKEN')
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
 

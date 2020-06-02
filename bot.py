@@ -7,7 +7,7 @@ random.seed()
 
 #getting token from heroku vars
 def index(request):
-    token = str(os.environ.get('BOT_TOKEN'))
+    token = os.environ.get('BOT_TOKEN')
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]
 
@@ -25,5 +25,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send("1xbet", tts = True)
         
-
 client.run(token)

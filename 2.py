@@ -21,7 +21,7 @@ async def on_message(message):
     await message.channel.send(random.choice(ads), tts = True)
 
     if message.content.startswith('$hello'):
-        await message.channel.send("1xbet", tts = True)]
+        await message.channel.send("1xbet", tts = True)
         
 
 client.run(token)

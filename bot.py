@@ -4,7 +4,7 @@ import random
 client = discord.Client()  #initializing some stuff
 random.seed()
 
-from boto.s3.connection import S3Connection   #getting token from heroku vars
+#getting token from heroku vars
 token = S3Connection(os.environ['BOT_TOKEN'])
 
 ads = ["Кима","Музыкант","Вібачте","АТБ","Жираф","Челиха","Шо ты сказааааав?","Беблеотечка"]

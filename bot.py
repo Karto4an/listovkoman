@@ -26,10 +26,6 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    
-    count = int("count+1")
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=count))
-    await message.channel.send(random.choice(ads), tts = True)
 
     if message.content.startswith('$hello'):
         await message.channel.send("1xbet", tts = True)

@@ -40,11 +40,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user:
-        if message.content.startswith('$web'):
-                await message.channel.send(random.choice(sites))
-        else:
-                if message.author == client.user:
-                        await message.channel.send(random.choice(ads), tts = True)
+	return
+
+if message.author == client.user:
+	if message.content.startswith('$web'):
+		await message.channel.send(random.choice(sites))
+	else:
+		await message.channel.send(random.choice(ads), tts = True)
 
 client.run(token)

@@ -18,21 +18,21 @@ ads = (["Меня создал @Karto4an#0420","88005553535 лучше позв�
         "Каждому сосну за покупку участка в экологически чистой зоне","Мясные продукты отменного качества! За слова отвечаем.",
         "Жираф","Челиха","Шо ты сказааааав?","Беблеотечка","Активация Windows. Чтобы активировать Windows, перейдите в раздел Параметры."])
 
-sites = (["http://pixelsfighting.com/,
-         http://www.omfgdogs.com/,
-         http://chihuahuaspin.com/,
-         https://www.ascii-middle-finger.com/,
-         http://buzzybuzz.biz/,
-         https://thepigeon.org/,
-         http://yeahlemons.com/,
-         http://www.amialright.com/,
-         https://www.bouncingdvdlogo.com/,
-         http://notdayoftheweek.com/,
-         http://eelslap.com/,
-         http://corndog.io/,
-         https://heeeeeeeey.com/,
-         https://smashthewalls.com/,
-         https://thatsthefinger.com/"])
+sites = (["http://pixelsfighting.com/",
+         "http://www.omfgdogs.com/",
+         "http://chihuahuaspin.com/",
+         "https://www.ascii-middle-finger.com/",
+         "http://buzzybuzz.biz/",
+         "https://thepigeon.org/",
+         "http://yeahlemons.com/",
+         "http://www.amialright.com/",
+         "https://www.bouncingdvdlogo.com/",
+         "http://notdayoftheweek.com/",
+         "http://eelslap.com/",
+         "http://corndog.io/",
+         "https://heeeeeeeey.com/",
+         "https://smashthewalls.com/",
+         "https://thatsthefinger.com/"])
 
 @client.event
 async def on_ready():

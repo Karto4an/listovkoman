@@ -12,7 +12,7 @@ token = os.getenv('BOT_TOKEN')
 async def on_ready():
 	print("ready")
 	
-@client.command
+@client.command()
 async def ban(ctx, member: discord.Member, *, reason = None):
 	await member.ban(reason=reason)
 client.run(token)
